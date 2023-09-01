@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0e9e301e-8a06-491e-8929-275799c1a7b9"
+      }
+    },
+    "owner": "andresizer"
   }
 }
