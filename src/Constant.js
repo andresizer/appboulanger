@@ -1,3 +1,5 @@
+import { TextInput } from "react-native";
+
 export const cores = {
     COR_PRIMARIA: "#F96163",
     COR_LIGHT: "#FFF",
@@ -20,10 +22,61 @@ export const categorias = [
     },
     {
         id: "04",
-        categoria: "Vienoiserie",
+        categoria: "Viennoiserie",
     },
     {
         id: "05",
         categoria: "Confeitaria",
     },
 ];
+
+export const ListaReceitas = [
+    {
+        id: "01",
+        nome: "Pão Francês",
+        image: require("../assets/img/frances.jpg"),
+        ingredientes: ["quantidade",<TextInput/>]
+    },
+    {
+        id: "02",
+        nome: "Brioche",
+        image: require("../assets/img/brioche.png"),
+        ingredientes: "tchau"
+    },
+    {
+        id: "03",
+        nome: "Pão Italiano",
+        image: require("../assets/img/frances.jpg"),
+        ingredientes: "lal"
+    },
+    {
+        id: "04",
+        nome: "Baguette",
+        image: require("../assets/img/frances.jpg"),
+        ingredientes: "oi"
+    },
+    {
+        id: "05",
+        nome: "Pão Australiano",
+        image: require("../assets/img/australiano.png"),
+        ingredientes: ["quantidade",<TextInput/>]
+    },
+    {
+        id: "06",
+        nome: "Baguette Integral",
+        image: require("../assets/img/integral.png"),
+        ingredientes: "tchau"
+    },
+    {
+        id: "07",
+        nome: "Pão de milho",
+        image: require("../assets/img/milho.png"),
+        ingredientes: "lal"
+    },
+    {
+        id: "08",
+        nome: "Croissant",
+        image: require("../assets/img/frances.jpg"),
+        ingredientes: "oi"
+    },
+]

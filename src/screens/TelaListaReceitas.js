@@ -6,6 +6,8 @@ import SearchFilter from '../components/SearchFilter';
 
 import Texto from '../components/Texto';
 import FiltroCategorias from '../components/FiltroCategorias';
+import CardsReceitas from '../components/CardsReceitas';
+
 
 
 
@@ -29,6 +31,11 @@ export default function TelaListaReceitas({ route })  {
           <FiltroCategorias />
         </View>
 
+        {/* Receitas Render */}
+        <View style={{marginTop: 22, flex: 1}}>
+          <Texto style={estilos.textoCategorias}>Receitas</Texto>
+         <CardsReceitas />
+        </View>
 
       </View>  
         
