@@ -2,10 +2,12 @@ import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import { FontAwesome } from "@expo/vector-icons";
 
+import Texto from './Texto';
+
 const Header = ({ headerText, headerIcon }) => {
   return (
-    <View style={{ flexDirection: "row" }}>
-      <Text style={{ flex: 1, fontSize: 22, fontWeight: "700"}}>{headerText}</Text>
+    <View style={estilos.container}>
+      <Texto style={estilos.texto}>{headerText}</Texto>
       <FontAwesome name={headerIcon} size={24} color="#b56a65" />
     </View>
   )
@@ -13,4 +15,15 @@ const Header = ({ headerText, headerIcon }) => {
 
 export default Header
 
-const styles = StyleSheet.create({})
+const estilos = StyleSheet.create({
+    container: {
+      flexDirection: "row",
+    },
+
+    texto: {
+      flex: 1,
+      fontSize: 22,
+      maxHeight: 700,
+    },
+
+})

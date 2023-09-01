@@ -5,11 +5,11 @@ export default function Texto({ children, style }) {
 
     let estilo = estilos.texto;
 
-    if( style?.fonte === "negrito") {
+    if( style?.maxHeight == "700") {
         estilo = estilos.textoNegrito
     };
 
-    if(style?.fonte === "black") {
+    if(style?.maxHeight == "900") {
         estilo = estilos.textoBlack
     };
 

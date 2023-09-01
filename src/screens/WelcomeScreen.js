@@ -4,26 +4,22 @@ import { StatusBar } from 'expo-status-bar';
 
 import bakerImage from "../../assets/img/baker.jpg";
 import Texto from '../components/Texto';
-import InputBox from '../components/InputBox';
 
 
 const width = Dimensions.get('screen').width;
 
-const WelcomeScreen = ({ navigation, onValueChange }) => {
+const WelcomeScreen = ({ navigation }) => {
     
     const [inputValue, setInputValue] = useState('');
 
     const handleInputChange = (text) => {
       setInputValue(text);
     };
-  
-    const handleButtonClick = () => {
-      onValueChange(inputValue);
-    };
  
     return (
 
     <View style={estilos.View}>
+        <StatusBar />
             <Image source={bakerImage} style={estilos.Baker} />
 
             <Texto style={estilos.subtitulo}>Tenha o controle das suas fórmulas de padeiro</Texto>
@@ -54,7 +50,8 @@ const estilos = StyleSheet.create({
     View: {
         backgroundColor: "#fff",
         flex: 1,
-        alignItems: "center"
+        alignItems: "center",
+        marginTop:36,
     },
 
     Baker: {
@@ -67,7 +64,7 @@ const estilos = StyleSheet.create({
         fontSize: 42,
         textAlign: "center",
         padding: 20,
-        fonte: "negrito"
+        maxHeight: "700"
     },
         
     subtitulo: {
@@ -77,13 +74,13 @@ const estilos = StyleSheet.create({
         textAlign: "center",
         marginTop: 20,
         padding: 15,
-        fonte: "negrito"
+        maxHeight: "700"
     },
 
     texto:{
         fontSize: 24,
         color: "#fff",
-        fonte: "black"
+        maxHeight: "900"
     },
     botao: {
         backgroundColor: "#d2d09f",
@@ -94,8 +91,8 @@ const estilos = StyleSheet.create({
         marginTop: 40,
     },
     inputbox:{
-        borderColor:"black",
-        borderWidth: 2,
+        borderColor:"gray",
+        borderWidth: 3,
         width: width*0.6,
         height: 40,
         borderRadius:50,
