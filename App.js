@@ -1,20 +1,30 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { useFonts, Montserrat_400Regular, Montserrat_700Bold, Montserrat_900Black } from '@expo-google-fonts/montserrat';
+import AppNavigator from './src/navigation/AppNavigator';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+
+const [fonteCarregada] = useFonts ({
+  "MontserratPadrao": Montserrat_400Regular,
+  "MontserratNegrito": Montserrat_700Bold,
+  "MontserratBlack": Montserrat_900Black,
+});
+
+if(!fonteCarregada) {
+  return  
+  <View>
+    <Text>Open up App.js to start working on your app!</Text>
+    
+  </View>
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  return (
+    
+    <AppNavigator />
+
+   
+  );
+};
+
+
