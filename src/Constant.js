@@ -10,23 +10,23 @@ export const cores = {
 export const categorias = [
     {
         id: "01",
-        categoria: "Brancos",
+        nome: "Brancos",
     },
     {
         id: "02",
-        categoria: "Integrais",
+        nome: "Integrais",
     },
     {
         id: "03",
-        categoria: "Rústicos",
+        nome: "Rústicos",
     },
     {
         id: "04",
-        categoria: "Viennoiserie",
+        nome: "Viennoiserie",
     },
     {
         id: "05",
-        categoria: "Confeitaria",
+        nome: "Confeitaria",
     },
 ];
 
@@ -34,8 +34,21 @@ export const ListaReceitas = [
     {
         id: "01",
         nome: "Pão Francês",
-        image: require("../assets/img/frances.jpg"),
-        ingredientes: ["quantidade",<TextInput/>]
+        image: require("../assets/img/frances.png"),
+        ingredientes: [
+            "farinha branca",
+            "agua",
+            "sal",
+            "melhorador", 
+            "fermento"
+        ],
+        quantidades: [
+            0.61,
+            0.366,
+            0.0122,
+            0.0061, 
+            0.0061
+        ],
     },
     {
         id: "02",
@@ -46,13 +59,13 @@ export const ListaReceitas = [
     {
         id: "03",
         nome: "Pão Italiano",
-        image: require("../assets/img/frances.jpg"),
+        image: require("../assets/img/frances.png"),
         ingredientes: "lal"
     },
     {
         id: "04",
         nome: "Baguette",
-        image: require("../assets/img/frances.jpg"),
+        image: require("../assets/img/frances.png"),
         ingredientes: "oi"
     },
     {
@@ -76,7 +89,7 @@ export const ListaReceitas = [
     {
         id: "08",
         nome: "Croissant",
-        image: require("../assets/img/frances.jpg"),
+        image: require("../assets/img/frances.png"),
         ingredientes: "oi"
     },
 ]

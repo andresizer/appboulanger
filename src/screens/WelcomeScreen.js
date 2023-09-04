@@ -1,6 +1,7 @@
 import { Dimensions, Image, StyleSheet, TouchableOpacity, TextInput, View, Button } from 'react-native'
 import React, { useState } from 'react'
 import { StatusBar } from 'expo-status-bar';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 import bakerImage from "../../assets/img/baker.jpg";
 import Texto from '../components/Texto';
@@ -18,7 +19,7 @@ const WelcomeScreen = ({ navigation }) => {
  
     return (
 
-    <View style={estilos.View}>
+    <SafeAreaView style={estilos.View}>
         <StatusBar />
             <Image source={bakerImage} style={estilos.Baker} />
 
@@ -40,7 +41,7 @@ const WelcomeScreen = ({ navigation }) => {
             <Texto style={estilos.texto}>Entrar</Texto>
 
             </TouchableOpacity>
-        </View>
+        </SafeAreaView>
   )
 }
 
@@ -51,7 +52,6 @@ const estilos = StyleSheet.create({
         backgroundColor: "#fff",
         flex: 1,
         alignItems: "center",
-        marginTop:36,
     },
 
     Baker: {

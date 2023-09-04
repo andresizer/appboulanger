@@ -3,6 +3,7 @@ import React from 'react';
 import Header from '../components/Header';
 import { StatusBar } from 'expo-status-bar';
 import SearchFilter from '../components/SearchFilter';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 import Texto from '../components/Texto';
 import FiltroCategorias from '../components/FiltroCategorias';
@@ -16,12 +17,13 @@ export default function TelaListaReceitas({ route })  {
   const { userName } = route.params;
   
     return (
-      <View style={estilos.container}>
+      <SafeAreaView style={estilos.container}>
         <StatusBar />
 
         {/* Header Render */}
-        <Header headerText={`Olá, ${userName}`} headerIcon={"bell-o"} />
-
+        <View style={estilos.header}>
+          <Header  headerText={`Olá, ${userName}`} headerIcon={"bell-o"} />
+        </View>
         {/* Barra de Filtro Render */}
         <SearchFilter icon={"search"} placeholder={"Digite a fórmula que desejas encontrar"} />
 
@@ -37,7 +39,7 @@ export default function TelaListaReceitas({ route })  {
          <CardsReceitas />
         </View>
 
-      </View>  
+      </SafeAreaView>  
         
     ); 
 };
@@ -49,8 +51,11 @@ const estilos = StyleSheet.create({
 
   container: {
     flex:1,
-    marginHorizontal:16,
-    marginTop:50,
+    margin:10,
+  },
+
+  header: {
+    marginHorizontal: 16,
   },
 
   textoCategorias: {

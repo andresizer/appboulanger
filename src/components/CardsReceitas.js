@@ -1,18 +1,28 @@
-import { FlatList, StyleSheet, Text, View, Image, Pressable } from 'react-native'
+import { FlatList, StyleSheet, Text, View, Image, Pressable, Dimensions } from 'react-native'
 import React from 'react'
 import { ListaReceitas } from '../Constant'
 import { cores } from '../Constant'
 
 import Texto from './Texto'
+import { useNavigation } from '@react-navigation/native'
+
+
+const width = Dimensions.get('screen').width
+
+let column = 2
+
+if (width > 500) column = 3;
+if (width > 700) column = 4;
 
 const CardsReceitas = () => {
+  const navigation = useNavigation();
   return (
     <View>
       <FlatList 
       data={ListaReceitas} 
       renderItem={({ item })=> 
       <Pressable 
-      onPress={() => alert("hi")}
+      onPress={() => navigation.navigate("FormulasReceitas", { item:item })}
       style={{
         backgroundColor: cores.COR_LIGHT,
         elevation: 3,
@@ -28,7 +38,7 @@ const CardsReceitas = () => {
         <Texto>{item.nome}</Texto>
         <View></View>
       </Pressable> }
-      numColumns={2}
+      numColumns={column}
       columnWrapperStyle={{
         justifyContent: 'space-around',
       }}

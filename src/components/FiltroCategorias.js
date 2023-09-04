@@ -25,7 +25,7 @@ const FiltroCategorias = () => {
               // shadowRadius: 7,
               elevation: 12,
               }}> 
-                <Texto style={{color: index === 0 && cores.COR_LIGHT}}>{categoria.categoria}</Texto>
+                <Texto style={{color: index === 0 && cores.COR_LIGHT}}>{categoria.nome}</Texto>
             </View>
           );
         })}
