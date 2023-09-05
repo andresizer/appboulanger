@@ -31,8 +31,6 @@ const CardsReceitas = () => {
         alignItems: "center",
         paddingHorizontal: 8,
         paddingVertical: 26,
-
-
         }}>
         <Image source={item.image} style={{width: 150, height: 150, resizeMode: "center"}} />
         <Texto>{item.nome}</Texto>

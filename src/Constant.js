@@ -56,27 +56,27 @@ export const ListaReceitas = [
         cor: "#ffa500",
         ingredientes: [
             "farinha branca",
-            "sal",
             "açúcar",
+            "sal",
             "fermento seco",
             "ovo", 
             "manteiga",
             "água"
         ],
         quantidades: [
-            0.5195,
-            0.0104,
-            0.0779,
-            0.0078, 
-            0.1403,
-            0.1299,
-            0.1143
+            0.5149,
+            0.0772,
+            0.0103,
+            0.0062, 
+            0.1390,
+            0.1390,
+            0.1133
         ],
     },
     {
         id: "03",
         nome: "Pão Italiano",
-        image: require("../assets/img/frances.png"),
+        image: require("../assets/img/paoitaliano.png"),
         ingredientes: [
             "farinha branca",
             "agua",
@@ -117,17 +117,25 @@ export const ListaReceitas = [
         image: require("../assets/img/australiano.png"),
         ingredientes: [
             "farinha branca",
-            "agua",
+            "farinha integral",
+            "açúcar mascavo",
+            "cacau em pó 100%", 
             "sal",
-            "melhorador", 
-            "fermento"
+            "fermento seco",
+            "água",
+            "manteiga",
+            "mel"
         ],
         quantidades: [
-            0.61,
-            0.366,
-            0.0122,
-            0.0061, 
-            0.0061
+            0.4226,
+            0.1057,
+            0.0317,
+            0.0211, 
+            0.0132,
+            0.0042,
+            0.2958,
+            0.0528,
+            0.0528
         ],
     },
     {
@@ -178,7 +186,7 @@ export const ListaReceitas = [
     {
         id: "08",
         nome: "Croissant",
-        image: require("../assets/img/frances.png"),
+        image: require("../assets/img/croissant.png"),
         ingredientes: [
             "farinha branca",
             "agua",
