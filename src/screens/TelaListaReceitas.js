@@ -47,15 +47,20 @@ export default function TelaListaReceitas({ route })  {
         </View>
       {/* Formulario Report Render */}
       <View style={{
-        marginTop: 22, 
-        flexDirection:"row", 
         justifyContent:"space-between", 
-        marginTop:40, 
-        paddingHorizontal: 30,
-        alignItems: "center", 
-        borderWidth: 2,
-        borderColor: "#000",
-        borderRadius: 20,
+        marginTop: 28,
+        width: "100%",
+        alignItems: "center",
+        backgroundColor:"#fff", 
+        // borderTopWidth: 3,
+        // borderLeftWidth: 3,
+        // borderRightWidth:3,
+        // borderColor: "lightgray",
+        borderTopRightRadius: 20,
+        borderTopLeftRadius: 20,
+        bottom: -10,
+        elevation: 5,
+        
         
         
 
@@ -63,11 +68,27 @@ export default function TelaListaReceitas({ route })  {
         }}>
           <Pressable
           onPress={() => navigation.navigate("FaleConosco")}
+          style={{
+            margin: 10,
+            padding: 5,
+            backgroundColor: 'lightgray',
+            elevation: 3,
+            borderRadius: 10,
+            borderWidth:2,
+            borderColor:"gray",        
+          }}
           >
-            <Texto style={estilos.textoCategorias}>Fale conosco</Texto>
+            <Texto style={{
+                  fontSize: 24,
+                  maxHeight: 700,
+                  color: "#fff",
+            }}>Fale conosco</Texto>
         
           </Pressable>
-          <Texto>Desenvolvido por André Sizer</Texto>
+          <Texto style ={{
+            marginBottom: 10,
+
+          }}>Desenvolvido por André Sizer</Texto>
              
         </View>
       </SafeAreaView>  
