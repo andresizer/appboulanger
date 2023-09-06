@@ -51,91 +51,110 @@ export const ListaReceitas = [
     },
     {
         id: "02",
-        nome: "Brioche",
-        image: require("../assets/img/brioche.png"),
+        nome: "Pão de Xis",
+        image: require("../assets/img/paodexis.png"),
         cor: "#ffa500",
         ingredientes: [
-            "farinha branca",
+            "farinha de trigo",
             "açúcar",
             "sal",
             "fermento seco",
-            "ovo", 
-            "manteiga",
-            "água"
+            "leite em pó", 
+            "melhorador",
+            "água",
+            "margarina"
         ],
         quantidades: [
-            0.5149,
-            0.0772,
-            0.0103,
-            0.0062, 
-            0.1390,
-            0.1390,
-            0.1133
+            0.5848,
+            0.0468,
+            0.0117,
+            0.0117, 
+            0.0175,
+            0.0058,
+            0.2924,
+            0.0292
         ],
     },
     {
         id: "03",
-        nome: "Pão Italiano",
-        image: require("../assets/img/paoitaliano.png"),
+        nome: "Esfiha",
+        image: require("../assets/img/esfiha.png"),
+        cor: "#adaa21",
         ingredientes: [
             "farinha branca",
-            "agua",
-            "sal",
-            "melhorador", 
-            "fermento"
+            "açúcar",
+            "fermento seco",
+            "sal", 
+            "melhorador",
+            "água",
+            "óleo de canola",
+            "farinha de milho"
         ],
         quantidades: [
-            0.61,
-            0.366,
-            0.0122,
-            0.0061, 
-            0.0061
+            0.5405,
+            0.0541,
+            0.0108,
+            0.0108, 
+            0.0054,
+            0.2703,
+            0.0541,
+            0.0541
+
         ],
     },
     {
         id: "04",
-        nome: "Baguette",
-        image: require("../assets/img/frances.png"),
+        nome: "Pretzel",
+        image: require("../assets/img/pretzel.png"),
+        cor:"#bb8641",
         ingredientes: [
             "farinha branca",
-            "agua",
+            "açúcar",
             "sal",
-            "melhorador", 
-            "fermento"
+            "fermento", 
+            "melhorador",
+            "água",
+            "ovo",
+            "margarina"
+
         ],
         quantidades: [
-            0.61,
-            0.366,
-            0.0122,
-            0.0061, 
-            0.0061
+            0.5747,
+            0.0287,
+            0.0115,
+            0.0057, 
+            0.0057,
+            0.2874,
+            0.0575,
+            0.0287
         ],
     },
     {
         id: "05",
-        nome: "Pão Australiano",
-        image: require("../assets/img/australiano.png"),
+        nome: "Pão de Centeio",
+        image: require("../assets/img/paocenteio.png"),
+        cor:"#554126",
         ingredientes: [
             "farinha branca",
-            "farinha integral",
-            "açúcar mascavo",
-            "cacau em pó 100%", 
+            "farinha de centeio",
+            "açúcar",
             "sal",
+            "melhorador",
             "fermento seco",
             "água",
-            "manteiga",
-            "mel"
+            "banha",
+            "grãos cobertura"
         ],
         quantidades: [
-            0.4226,
-            0.1057,
-            0.0317,
-            0.0211, 
-            0.0132,
-            0.0042,
-            0.2958,
-            0.0528,
-            0.0528
+            0.3659,
+            0.1220,
+            0.0049,
+            0.0098, 
+            0.0049,
+            0.0049,
+            0.2683,
+            0.0244,
+            0.1951
         ],
     },
     {
@@ -166,40 +185,54 @@ export const ListaReceitas = [
     },
     {
         id: "07",
-        nome: "Pão de milho",
-        image: require("../assets/img/milho.png"),
+        nome: "Pão Multigrãos",
+        image: require("../assets/img/multigraos.png"),
+        cor: "#6d2305",
         ingredientes: [
+            "farinha integral",
             "farinha branca",
-            "agua",
+            "farinha de centeio",
+            "açúcar",
             "sal",
-            "melhorador", 
-            "fermento"
+            "fermento fresco", 
+            "melhorador",
+            "água",
+            "azeite"
         ],
         quantidades: [
-            0.61,
-            0.366,
-            0.0122,
-            0.0061, 
-            0.0061
+            0.3614,
+            0.1807,
+            0.0602,
+            0.0030, 
+            0.0090,
+            0.0181,
+            0.0060,
+            0.3313,
+            0.0301
         ],
     },
     {
         id: "08",
-        nome: "Croissant",
-        image: require("../assets/img/croissant.png"),
+        nome: "Pão de Leite",
+        image: require("../assets/img/paodeleite.png"),
+        cor:"#f1aa6b",
         ingredientes: [
             "farinha branca",
-            "agua",
+            "açúcar",
             "sal",
-            "melhorador", 
-            "fermento"
+            "fermento seco", 
+            "água",
+            "leite",
+            "óleo"
         ],
         quantidades: [
-            0.61,
-            0.366,
-            0.0122,
-            0.0061, 
-            0.0061
+            0.6042,
+            0.0483,
+            0.0121,
+            0.0091, 
+            0.1511,
+            0.1511,
+            0.0242
         ],
     },
 ]

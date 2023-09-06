@@ -89,6 +89,7 @@ const estilos = StyleSheet.create({
         width: width * 0.8,
         alignItems: "center",
         marginTop: 40,
+        elevation: 6
     },
     inputbox:{
         borderColor:"gray",

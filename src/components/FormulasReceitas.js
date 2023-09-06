@@ -20,10 +20,6 @@ const FormulasReceitas = ({ navigation, route }) => {
     const valoresAtualizados = valoresIngredientes.map(numero => numero * quantidade * peso);
     const valoresArredondados = valoresAtualizados.map(numero => Math.round(numero));
 
-    
-
-    
-
   return (
     <View style={{ backgroundColor: item.cor, flex: 1 }}>
 
@@ -40,7 +36,7 @@ const FormulasReceitas = ({ navigation, route }) => {
         <View style={{
             backgroundColor: "#fff",
             flex: 1,
-            marginTop: 150,
+            marginTop: 110,
             borderTopLeftRadius: 56,
             borderTopRightRadius: 56,
             alignItems: "center",
@@ -64,6 +60,9 @@ const FormulasReceitas = ({ navigation, route }) => {
                     justifyContent:'center',
                     maxHeight:900,
                     fontSize:32,
+                    textShadowColor: item.cor,
+                    textShadowOffset: {width: 1, height: 1},
+                    textShadowRadius: 8,
                 }}
                 >{item.nome}</Texto>
             </View>
@@ -116,70 +115,68 @@ const FormulasReceitas = ({ navigation, route }) => {
                                 </View>
                                 )
                             })}
-                        
-                        {/* <FlatList 
-                            data={valoresArredondados}
-                            keyExtractor={(item, index) => index.toString()}
-                            renderItem={({ item }) => (
-                                <Texto style={{alignSelf: "center",fontSize: 20, maxHeight: 700}}>{item}</Texto>
-                            )}
-                        />   */}
                     </View>
                 </View>   
-
             </View>
-                
-                <View style={{
-                    flexDirection:'column',
-                    alignItems:'center',
-                    top: 100,
-                    padding: 10,
-                    width: '100%',
-                    justifyContent: 'space-around',
-                    paddingHorizontal:40,
-                    }}>
-                    <View style={{flexDirection: "row"}}>
-                    <Texto style={estilos.label}>Qtd: </Texto>      
-                    <NumericInput 
-                    value={quantidade} 
-                    onChange={value => setQuantidade(value)} 
-                    totalWidth={110} 
-                    totalHeight={40} 
-                    iconSize={25}
-                    step={30}
-                    valueType='integer'
-                    rounded 
-                    iconStyle={{ color: 'white' }} 
-                    rightButtonBackgroundColor='gray' 
-                    leftButtonBackgroundColor='gray'
-                    />
-                    <Texto style={estilos.label}> Peso un: </Texto>
-                    <NumericInput
-                    value={peso}
-                    onChange={value => setPeso(value)}
-                    totalWidth={110} 
-                    totalHeight={40} 
-                    iconSize={25}
-                    step={10}
-                    valueType='integer'
-                    rounded 
-                    iconStyle={{ color: 'white' }} 
-                    rightButtonBackgroundColor='gray' 
-                    leftButtonBackgroundColor='gray'/>
-                    </View>
-                    <View>
-                    <Texto style ={{
-                        paddingTop: 40,
-                        maxWidth: "100%",
-                        textAlign:'center',
-                        maxHeight:700,
-                        fontSize:24,        
-                    }}
-                    >Receita para {quantidade} pães de {peso} gramas cada{"\n\n"}Peso total: {quantidade * peso}g</Texto>
-                    </View>
-                </View>  
-           
-            
+            {/* Seletor de quantidades */}
+            <View style={{
+                alignItems:'center',
+                top: 100,
+                padding: 10,
+                width: '100%',
+                justifyContent: 'space-around',
+                paddingHorizontal:40,
+                }}>
+                <View style={{flexDirection: "row"}}>
+                <Texto style={estilos.label}>Qtd: </Texto>      
+                <NumericInput 
+                value={quantidade} 
+                onChange={value => setQuantidade(value)} 
+                totalWidth={110} 
+                totalHeight={40} 
+                iconSize={25}
+                step={30}
+                valueType='integer'
+                rounded 
+                iconStyle={{ color: 'white' }} 
+                rightButtonBackgroundColor='gray' 
+                leftButtonBackgroundColor='gray'
+                />
+                <Texto style={estilos.label}> Peso un: </Texto>
+                <NumericInput
+                value={peso}
+                onChange={value => setPeso(value)}
+                totalWidth={110} 
+                totalHeight={40} 
+                iconSize={25}
+                step={10}
+                valueType='integer'
+                rounded 
+                iconStyle={{ color: 'white' }} 
+                rightButtonBackgroundColor='gray' 
+                leftButtonBackgroundColor='gray'/>
+                </View>
+                <View>
+                <Texto style ={{
+                    paddingTop: 30,
+                    maxWidth: "100%",
+                    textAlign:'center',
+                    maxHeight:700,
+                    fontSize:24, 
+
+                }}
+                >Receita para {quantidade} pães de {peso} gramas cada</Texto>
+                <Texto style ={{
+                paddingTop: 20,
+                maxWidth: "100%",
+                textAlign:'center',
+                maxHeight:700,
+                fontSize:24, 
+
+                }}
+                >Peso total da massa: {quantidade*peso}g</Texto>
+                </View>
+            </View>      
         </View>
         
     </View>

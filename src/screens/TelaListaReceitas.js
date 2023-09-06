@@ -79,7 +79,7 @@ export default function TelaListaReceitas({ route })  {
           }}
           >
             <Texto style={{
-                  fontSize: 24,
+                  fontSize: 18,
                   maxHeight: 700,
                   color: "#fff",
             }}>Fale conosco</Texto>
