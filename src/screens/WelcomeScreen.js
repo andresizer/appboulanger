@@ -20,7 +20,7 @@ const WelcomeScreen = ({ navigation }) => {
     return (
 
     <SafeAreaView style={estilos.View}>
-        <StatusBar />
+        <StatusBar animated={true} translucent={true} barStyle={'dark-mode'} />
             <Image source={bakerImage} style={estilos.Baker} />
 
             <Texto style={estilos.subtitulo}>Tenha o controle das suas fórmulas de padeiro</Texto>
@@ -64,7 +64,10 @@ const estilos = StyleSheet.create({
         fontSize: 42,
         textAlign: "center",
         padding: 20,
-        maxHeight: "700"
+        maxHeight: "700",
+        textShadowColor: "#000",
+        textShadowOffset: {width: 1, height: 1},
+        textShadowRadius: 6,
     },
         
     subtitulo: {
@@ -80,7 +83,10 @@ const estilos = StyleSheet.create({
     texto:{
         fontSize: 24,
         color: "#fff",
-        maxHeight: "900"
+        maxHeight: "900",
+        textShadowColor: "#000",
+        textShadowOffset: {width: 0.1, height: 0.1},
+        textShadowRadius: 10,
     },
     botao: {
         backgroundColor: "#d2d09f",
