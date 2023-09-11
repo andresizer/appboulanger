@@ -16,6 +16,14 @@ const WelcomeScreen = ({ navigation }) => {
     const handleInputChange = (text) => {
       setInputValue(text);
     };
+
+  const handlePress = () => {
+    if (inputValue.length > 0) {
+        navigation.navigate("TelaListaReceitas", { userName: inputValue });
+    } else {
+        alert('Preencha o seu nome para entrar!');
+    }
+  };
  
     return (
 
@@ -35,7 +43,7 @@ const WelcomeScreen = ({ navigation }) => {
             />      
 
             <TouchableOpacity style={estilos.botao} 
-            onPress={() => navigation.navigate("TelaListaReceitas", { userName: inputValue }) }
+            onPress={handlePress}
             >
 
             <Texto style={estilos.texto}>Entrar</Texto>
