@@ -2,10 +2,9 @@
   "expo": {
     "name": "Boulanger APP",
     "slug": "appboulanger",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/img/iconapp.png",
-    "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -18,10 +17,6 @@
       "supportsTablet": true
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/img/iconapp.png",
-        "backgroundColor": "#ffffff"
-      },
       "package": "com.andresizer.appboulanger"
     },
     "web": {
