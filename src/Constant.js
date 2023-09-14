@@ -35,11 +35,11 @@ export const ListaReceitas = [
         image: require("../assets/img/frances.png"),
         cor: "#f7e8ad",
         ingredientes: [
-            "farinha branca",
-            "agua",
+            "farinha de trigo",
+            "água",
             "sal",
             "melhorador", 
-            "fermento"
+            "fermento seco"
         ],
         quantidades: [
             0.61,

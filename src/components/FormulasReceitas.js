@@ -136,6 +136,7 @@ const FormulasReceitas = ({ navigation, route }) => {
                 totalHeight={40} 
                 iconSize={25}
                 step={30}
+                minValue={1}
                 valueType='integer'
                 rounded 
                 iconStyle={{ color: 'white' }} 
@@ -150,6 +151,7 @@ const FormulasReceitas = ({ navigation, route }) => {
                 totalHeight={40} 
                 iconSize={25}
                 step={10}
+                minValue={10}
                 valueType='integer'
                 rounded 
                 iconStyle={{ color: 'white' }} 

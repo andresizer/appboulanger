@@ -7,6 +7,7 @@ import TelaListaReceitas from '../screens/TelaListaReceitas';
 import FormulasReceitas from '../components/FormulasReceitas';
 import FormularioReport from '../components/FormularioReport';
 import FaleConosco from '../components/FaleConosco';
+import ComoUtilizar from '../components/ComoUtilizar';
 
 const Stack = createNativeStackNavigator();
 
@@ -20,6 +21,7 @@ const AppNavigator = () => {
             <Stack.Screen name = "FormulasReceitas" component={FormulasReceitas} />
             <Stack.Screen name = "FormularioReport" component={FormularioReport} />
             <Stack.Screen name = "FaleConosco" component={FaleConosco} />
+            <Stack.Screen name = "ComoUtilizar" component={ComoUtilizar} />
         </Stack.Navigator>
    </NavigationContainer>
    

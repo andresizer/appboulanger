@@ -1,4 +1,4 @@
-import { Dimensions, Image, StyleSheet, TouchableOpacity, TextInput, View, Button } from 'react-native'
+import { Dimensions, Image, StyleSheet, TouchableOpacity, TextInput } from 'react-native'
 import React, { useState } from 'react'
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -16,6 +16,21 @@ const WelcomeScreen = ({ navigation }) => {
     const handleInputChange = (text) => {
       setInputValue(text);
     };
+
+    const [isModalVisible, setModalVisible] = useState(true);
+
+    const toggleModal = () => {
+        setModalVisible(!isModalVisible);
+    };
+    
+
+  const handlePress = () => {
+    if (inputValue.length > 0) {
+        navigation.navigate("TelaListaReceitas", { userName: inputValue });
+    } else {
+        alert('Preencha o seu nome para entrar!');
+    }
+  };
  
     return (
 
@@ -35,7 +50,7 @@ const WelcomeScreen = ({ navigation }) => {
             />      
 
             <TouchableOpacity style={estilos.botao} 
-            onPress={() => navigation.navigate("TelaListaReceitas", { userName: inputValue }) }
+            onPress={handlePress}
             >
 
             <Texto style={estilos.texto}>Entrar</Texto>

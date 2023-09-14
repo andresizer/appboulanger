@@ -52,20 +52,21 @@ export default function TelaListaReceitas({ route })  {
         width: "100%",
         alignItems: "center",
         backgroundColor:"#fff", 
-        // borderTopWidth: 3,
-        // borderLeftWidth: 3,
-        // borderRightWidth:3,
-        // borderColor: "lightgray",
+        borderTopWidth: 3,
+        borderLeftWidth: 3,
+        borderRightWidth:3,
+        borderColor: "lightgray",
         borderTopRightRadius: 20,
         borderTopLeftRadius: 20,
         bottom: -10,
         elevation: 5,
-        
-        
-        
-
-
         }}>
+          <View style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'space-around',
+            width: "100%",
+          }}>
           <Pressable
           onPress={() => navigation.navigate("FaleConosco")}
           style={{
@@ -82,9 +83,31 @@ export default function TelaListaReceitas({ route })  {
                   fontSize: 18,
                   maxHeight: 700,
                   color: "#fff",
-            }}>Fale conosco</Texto>
+            }}
+            >Fale conosco</Texto>
         
           </Pressable>
+          <Pressable
+          onPress={() => navigation.navigate("ComoUtilizar")}
+          style={{
+            margin: 10,
+            padding: 5,
+            backgroundColor: 'lightgray',
+            elevation: 3,
+            borderRadius: 10,
+            borderWidth:2,
+            borderColor:"gray", 
+          }}
+          >
+            <Texto
+            style={{
+              fontSize: 18,
+              maxHeight: 700,
+              color: "#fff",
+            }}
+            >Como Utilizar</Texto>
+          </Pressable>
+          </View>
           <Texto style ={{
             marginBottom: 10,
 
