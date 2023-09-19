@@ -8,9 +8,8 @@ import { FontAwesome } from "@expo/vector-icons";
 import { useNavigation } from '@react-navigation/native'
 
 import Texto from '../components/Texto';
-import FiltroCategorias from '../components/FiltroCategorias';
 import CardsReceitas from '../components/CardsReceitas';
-import FormularioReport from '../components/FormularioReport';
+import FormularioReport from './FormularioReport';
 
 
 

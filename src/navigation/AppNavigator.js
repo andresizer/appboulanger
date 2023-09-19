@@ -5,9 +5,9 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import WelcomeScreen from '../screens/WelcomeScreen';
 import TelaListaReceitas from '../screens/TelaListaReceitas';
 import FormulasReceitas from '../components/FormulasReceitas';
-import FormularioReport from '../components/FormularioReport';
-import FaleConosco from '../components/FaleConosco';
-import ComoUtilizar from '../components/ComoUtilizar';
+import FormularioReport from '../screens/FormularioReport';
+import FaleConosco from '../screens/FaleConosco';
+import ComoUtilizar from '../screens/ComoUtilizar'
 
 const Stack = createNativeStackNavigator();
 

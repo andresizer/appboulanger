@@ -5,14 +5,14 @@ import { FontAwesome } from "@expo/vector-icons";
 import { useNavigation } from '@react-navigation/native'
 
 
-import Texto from './Texto';
+import Texto from '../components/Texto';
 
 
 
 const width = Dimensions.get('screen').width;
 const height = Dimensions.get('screen').height;
 
-const FaleConosco = () => {
+const EmBreve = () => {
 
     const navigation = useNavigation();
 
@@ -49,6 +49,6 @@ const FaleConosco = () => {
     </SafeAreaView>
   )};
 
-export default FaleConosco
+export default EmBreve
 
 const styles = StyleSheet.create({})
