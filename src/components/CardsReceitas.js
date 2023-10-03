@@ -7,9 +7,9 @@ import Texto from './Texto'
 import { useNavigation } from '@react-navigation/native'
 
 
-const width = Dimensions.get('screen').width
+const width = Dimensions.get('screen').width;
 
-let column = 2
+let column = 2;
 
 if (width > 500) column = 3;
 if (width > 700) column = 4;
@@ -22,7 +22,7 @@ const CardsReceitas = () => {
       data={ListaReceitas} 
       renderItem={({ item })=> 
       <Pressable 
-      onPress={() => navigation.navigate("FormulasReceitas", { item:item })}
+      onPress={() => navigation.navigate("FormulasReceitas" , { item: item })}
       style={{
         backgroundColor: cores.COR_LIGHT,
         elevation: 3,

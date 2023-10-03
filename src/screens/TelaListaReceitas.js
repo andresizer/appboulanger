@@ -107,11 +107,19 @@ export default function TelaListaReceitas({ route })  {
             >Como Utilizar</Texto>
           </Pressable>
           </View>
+          <View style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'space-around',
+            width: "100%",
+          }}> 
           <Texto style ={{
             marginBottom: 10,
-
           }}>Desenvolvido por André Sizer</Texto>
-             
+             <Texto style ={{
+            marginBottom: 10,
+            }}>Versão 1.0.1</Texto>
+            </View>
         </View>
       </SafeAreaView>  
 
